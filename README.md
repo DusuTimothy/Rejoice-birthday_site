@@ -1,23 +1,66 @@
 # Rejoice's Birthday Website
 
-A mobile-friendly, static birthday surprise for Rejoice. The site uses only HTML, CSS and JavaScript, plus the two supplied photos in `assets/`.
+A mobile-friendly static birthday surprise created for Rejoice. The site combines a celebratory hero section, personal message, photo gallery, music interaction, and decorative effects into a lightweight browser experience.
 
-## Preview locally
-Open `index.html` in a browser. For best results, use a local static server.
+## Preview
 
-## Deploy free with Vercel (mobile-friendly steps)
-1. Extract `rejoice-birthday-site.zip`.
-2. Go to https://vercel.com and sign in.
-3. In the Vercel dashboard choose **Add New → Project**.
-4. Import the folder from a Git repository, or use Vercel's supported deployment flow to upload/deploy the project.
-5. Framework Preset: **Other**. Build Command: leave blank. Output Directory: `.`.
-6. Deploy. Vercel will provide a public `*.vercel.app` URL to share with Rejoice.
+Open `index.html` directly in a modern browser, or run a local static server:
 
-Alternative: create a GitHub repository, upload the contents of this folder (make sure `index.html` is at the repository root), then import that repository into Vercel.
+```bash
+python3 -m http.server 4173
+```
 
-## Personalise before sending
-- Check the birthday date in the hero pill in `index.html` (currently set to NOVEMBER 02).
-- Edit any wording in `index.html` if you'd like it to sound more like you.
-- Keep the `assets` folder beside `index.html`; the image paths depend on it.
+Visit `http://localhost:4173`.
 
-No payment, custom domain, database, or API key is required. The ambient sound is generated in the browser and only starts when the visitor taps its button.
+## Features
+
+- Responsive design for phones, tablets, and desktop browsers
+- Birthday greeting and personal message
+- Photo and memory sections
+- Ambient browser-generated sound activated by the visitor
+- Lightweight visual animations and confetti effects
+- No database, API key, backend, or third-party runtime service required
+
+## Project Structure
+
+```text
+.
+├── index.html    # Page structure, content, styles, and interactions
+└── assets/       # Photos and other static media
+```
+
+## Personalization
+
+Before sharing the site, review and customize the following in `index.html`:
+
+- Rejoice's name and birthday date
+- Personal message and timeline details
+- Photo captions and page copy
+- Colors or decorative effects
+
+Keep the `assets/` directory beside `index.html` because the page references images relative to the repository root.
+
+## Deployment
+
+The project can be deployed to any static hosting provider.
+
+### GitHub Pages
+
+1. Push the repository to GitHub.
+2. Open **Settings → Pages**.
+3. Select the repository's default branch and the root directory.
+4. Save and wait for GitHub Pages to publish the site.
+
+### Vercel or Netlify
+
+- Framework preset: **Other**
+- Build command: leave blank
+- Output directory: `.`
+
+## Browser Notes
+
+Audio is generated in the browser and normally requires a user interaction before playback. Keep the image files inside `assets/` to preserve relative image paths.
+
+## License
+
+License terms have not yet been specified for this project.
